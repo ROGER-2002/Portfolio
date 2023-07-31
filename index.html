@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <button class="btn1" onClick="scrollDown('home')">Home</button>
+                <button class="btn1"onClick="scrollDown('about')">About</button>
+                <button class="btn1" onClick="scrollDown('skills')">Skills</button>
+                <button class="btn1" onclick="scrollDown('contact')">Contact</button>
+        </div>
+        <div id="home" class="home">
+            <div class="content">
+                <p class="title"> Frontend Developer</p>
+            <h1 id="myName">Hello, I'm <br><span>Aditya Rakate</span></h1>
+            <p id="ptag">I am pursuing Information Technology Degree from Bharati Vidyapeeth College of Engineering, Navi Mumbai, Kharghar.</p>
+            
+            <br>
+            
+            <button class="btn">Download CV</button>
+            </div>
+            <div class="images">
+                <img src="Image.png" id="developer">
+            </div>
+            
+
+        </div>
+        <div class="about" id="about">
+            <h1 id="aboutMe">About</h1>
+            <h1 id="edu">My Education:</h1>
+            <ul>
+                <li>
+                    I am final year Information Technology student from Bharati Vicyapeeth College of Engineering. (2020-2024)
+                </li>
+                <li>
+                    I completed my SSC and HSC from Vasant Vihar High School And Junior College.
+                    SSC - (2017-2018) 
+                    HSC - (2018-2020)
+                </li>
+            </ul>
+
+        </div>
+        <div class="skills" id="skills">
+            <h1>Skills</h1>
+            <ul><li>Web Development - HTML, CSS & Javascript</li>
+              <li>C and C++</li>  
+            <li>Basics of Python - Certified by Coursera</li></ul>
+        </div>
+        <div class="contact" id="contact">
+            <h1>Contact</h1>
+            <div class="innerContact">
+                <ul>  
+                    <li><a href="mailto:adityarakate369@gmail.com">Email</a></li>
+            
+            <li><a href="www.linkedin.com/in/aditya-rakate-4751aa234">linkedin</a></li>
+            
+            <li><a href="github.com/ROGER-2002">Github</a></li>
+        </ul>
+            </div>
+            
+        </div>
+        </div>
+       
+    <script>
+        function scrollDown(sectionId) {
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: "smooth" });
+}   
+    </script>
+</body>
+</html>
